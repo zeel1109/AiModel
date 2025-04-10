@@ -8,7 +8,7 @@ RUN npm i
 
 RUN npm run build
 
-FROM python3.10.9-slim AS runner
+FROM python:3.10.9-slim AS runner
 
 WORKDIR /app
 
