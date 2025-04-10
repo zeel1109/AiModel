@@ -1,4 +1,4 @@
-FROM node:22-slim as base
+FROM node:22-slim AS base
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ RUN npm i
 
 RUN npm run build
 
-FROM python3.10.9-slim as runner
+FROM python3.10.9-slim AS runner
 
 WORKDIR /app
 
