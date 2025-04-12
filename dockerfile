@@ -16,4 +16,4 @@ COPY --from=base /app/dist .
 
 EXPOSE 3000
 
-CMD ["python3","-m", "http.server", "3000"]
+CMD ["python3","-m", "http.server", "3000"] 
